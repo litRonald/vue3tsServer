@@ -23,10 +23,10 @@ import {GoodsListResp, GoodsListParam} from './interface/good'
 
 // 1. 看起来只是ts 不认识
 // export const handleGoodsList: <GoodsListResp>(prarm:GoodsListParam) => GoodsListResp = (prarm:GoodsListParam, sign: string = '') => {
-//    return postRequest('/goodsSql', prarm, sign)
+//    return postRequest('/goodssql', prarm, sign)
 // }
 // 2. 
 export const handleGoodsList: GoodsListResp = (prarm:GoodsListParam, sign: string = '') => {
-   return postRequest('/goodsSql', prarm, sign)
+   return postRequest('/goodssql', prarm, sign)
 }
 

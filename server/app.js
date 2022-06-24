@@ -66,7 +66,7 @@ app.all("*", function (req, res, next) {
 app.use('/', index);
 // app.use('/users', users);
 // app.use('/goods', goods);
-app.use('/goodsSql', goodsSql);
+app.use('/goodssql', goodsSql);
 
 
 // catch 404 and forward to error handler
