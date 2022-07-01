@@ -1,0 +1,27 @@
+#banner 接口数据
+# GET http://127.0.0.1:3000/api/banner
+
+
+# GET http://127.0.0.1:3000/goodssql
+
+
+
+
+
+// 注册接口 用户验证
+#注册
+# POST http://127.0.0.1:3000/member/reg
+# Content-Type: application/x-www-form-urlencoded
+
+# username=qwy&password=qweruopnmg&passwordAgain=qweruopnmg
+
+
+## 验证码
+# GET http://127.0.0.1:3000/member/logincode
+
+
+#登录
+POST http://127.0.0.1:3000/member/login
+Content-Type: application/x-www-form-urlencoded
+
+username=qwy&password=qweruopnmg&codes=dpHR

@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 studySrc
-
+tracking.js-master
 
 # Editor directories and files
 .vscode/*

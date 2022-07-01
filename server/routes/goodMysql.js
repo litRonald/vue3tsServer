@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
 }); 
  
 connection.connect();
- 
+// console.log(connection, 'connection============')
 var sql = 'SELECT * FROM goods'; // 数据库中的表
 
 // 分页

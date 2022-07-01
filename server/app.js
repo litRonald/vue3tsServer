@@ -9,6 +9,9 @@ var ejs = require('ejs')
 var index = require('./routes/index');
 var goodsSql = require('./routes/goodMysql');
 
+// 验证码
+var member = require('./routes/member');
+
 // var users = require('./routes/users');
 // var goods = require('./routes/goods')
 
@@ -63,11 +66,13 @@ app.all("*", function (req, res, next) {
     next();
 });
 
-app.use('/', index);
-// app.use('/users', users);
-// app.use('/goods', goods);
+// 路由结构
+app.use('/', index); // 暂时修改掉
 app.use('/goodssql', goodsSql);
 
+// node 登录
+app.use('/api', index);
+app.use('/member', member);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

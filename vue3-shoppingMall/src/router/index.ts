@@ -25,6 +25,11 @@
       path: '/goods/list',
       name: 'GoodsList',
       component: () => import('../view/GoodsList.vue')
+    },
+    {
+      path: '/face',
+      name: 'Face',
+      component: () => import('../view/FaceTracking.vue')
     }
   ]
    
