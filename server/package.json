@@ -1,7 +1,7 @@
 {
   "name": "litnado",
   "version": "1.0.0",
-  "description": "为vue3提供接口的node",
+  "description": "为vue3mall提供接口的node",
   "author": "875682652",
   "private": true,
   "scripts": {},
