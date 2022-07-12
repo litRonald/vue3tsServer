@@ -74,7 +74,7 @@
                 <ul>
                   <li v-for="(item, index) in goodsList" :key="index">
                     <div class="pic">
-                      <a href="#"><img :src="require(`@/../static/`+item.productImg)" alt=""></a>
+                      <a href="#"><img :src="(`@/../static/`+item.productImg)" alt=""></a>
                     </div>
                     <div class="main">
                       <div class="name">{{item.productName}}</div>
@@ -128,16 +128,16 @@
   import {handleGoodsList} from '../api/good'
   import {GoodsListResp} from '../api/interface/good'
 
-  let goodsList = ref([])
+  let goodsList:any = ref([])
 
   async function handlerGoods() {
     try {
       let {data: data} = await handleGoodsList({pageSize: 10, page: 1})
-      // this.$set(this, 'goodsList', data)
-      goodsList = data
-      console.log(data)
+      goodsList.value = data
+      console.log(goodsList)
+
     } catch(e) {
-      console.log(e)
+      console.error(e)
     }
   }
 
