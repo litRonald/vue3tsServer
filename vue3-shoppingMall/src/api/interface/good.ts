@@ -8,6 +8,7 @@ export interface GoodsListResp {
 }
 
 export interface GoodsListParam extends BasePage {
+    
     price: string,
     productName: string
 }

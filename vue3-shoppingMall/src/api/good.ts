@@ -1,5 +1,7 @@
 import { postRequest } from "../util/require.js";
+
 import {GoodsListResp, GoodsListParam} from './interface/good'
+
 
 // 示范
 // const foo = <T,>(x: T): T => x;
@@ -21,12 +23,12 @@ import {GoodsListResp, GoodsListParam} from './interface/good'
 //      return
 //  };
 
-// 1. 看起来只是ts 不认识
-// export const handleGoodsList: <GoodsListResp>(prarm:GoodsListParam) => GoodsListResp = (prarm:GoodsListParam, sign: string = '') => {
-//    return postRequest('/goodssql', prarm, sign)
+// 1. 
+// export const handleGoodsList: <GoodsListResp>(param:GoodsListParam) => GoodsListResp = (prarm:GoodsListParam, sign: string = '') => {
+//    return postRequest('/goodssql', param, sign)
 // }
 // 2. 
-export const handleGoodsList: GoodsListResp = (prarm:GoodsListParam, sign: string = '') => {
-   return postRequest('/goodssql', prarm, sign)
+export const handleGoodsList = (param:GoodsListParam, sign: string = '') => {
+   return postRequest('/goodssql', param, sign)
 }
 

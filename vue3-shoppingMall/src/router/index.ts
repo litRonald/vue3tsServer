@@ -14,7 +14,7 @@
     // {
     //   path: '/',
     //   name: 'Login',
-    //   component: login
+    //   component: () => import('@/view/login/index.vue')
     // },
     // {
     //   path: '/LoginOut',
@@ -26,11 +26,6 @@
       name: 'GoodsList',
       component: () => import('../view/GoodsList.vue')
     },
-    {
-      path: '/face',
-      name: 'Face',
-      component: () => import('../view/FaceTracking.vue')
-    }
   ]
    
   /**

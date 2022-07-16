@@ -1,0 +1,13 @@
+div,p,ul,li,a,ol,dd,td,th,tr,span,image,input,video,textarea,body,html,button,
+header,nav,footer,main,aside,canvas,caption,dl,dt,form,h1,h2,h3,h4,h5,h6,iframe,label,link,meta,option,
+tbody,table,thead,tfoot
+{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li,ol{
+    list-style: none;
+}
