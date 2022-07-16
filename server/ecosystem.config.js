@@ -1,3 +1,4 @@
+// 通过命令行生成的 配置文件作用与 "./pm2.config.js"一致
 module.exports = {
   apps : [{
     script: 'index.js',
