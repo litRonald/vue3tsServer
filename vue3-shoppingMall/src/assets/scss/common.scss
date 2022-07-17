@@ -1,0 +1,35 @@
+div,p,ul,li,a,ol,dd,td,th,tr,span,image,input,video,textarea,body,html,button,
+header,nav,footer,main,aside,canvas,caption,dl,dt,form,h1,h2,h3,h4,h5,h6,iframe,label,link,meta,option,
+tbody,table,thead,tfoot
+{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li,ol{
+    list-style: none;
+}
+
+.fs10{font-size: 10px;} .fs12{font-size: 12px;} .fs14{font-size: 14px;} .fs16{font-size: 16px;} .fs18{font-size:18px;} .fs20{font-size: 20px;} .fs24{font-size: 24px;} .fs26{font-size:26px;}
+.p5{padding: 5;} .p10{padding: 10px;} .p15{padding: 15;} .p20{padding: 20px;}
+.pl5{padding-left: 5;} .pl10{padding-left: 10px;} .pl15{padding-left: 15;} .pl20{padding-left: 20px;}
+.pt5{padding-top: 5;} .pt10{padding-top: 10px;} .pt15{padding-top: 15;} .pt20{padding-top: 20px;}
+.pr5{padding-right: 5;} .pr10{padding-right: 10px;} .pr15{padding-right: 15;} .pr20{padding-right: 20px;}
+.pb5{padding-bottom: 5;} .pb10{padding-bottom: 10px;} .pb15{padding-bottom: 15;} .pb20{padding-bottom: 20px;}
+
+.m5{margin: 5;} .m10{margin: 10mx;} .m15{margin: 15;} .m20{margin: 20mx;}
+
+
+.flex{
+    display: flex;
+}
+.felx_just_center {
+    justify-content: center;
+}
+
+.felx_just_between {
+    justify-content: space-between;
+}
+

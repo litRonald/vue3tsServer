@@ -26,6 +26,11 @@ const HelloWorld = defineComponent({
   },
 })
 
+//  安装sass时出现以下问题 需要注意
+// vue-jest@3.0.7" has incorrect peer dependency "vue@^2.x".
+
+//  Cannot read properties of null (reading 'package')
+
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', async () => {
     const msg = 'new message'

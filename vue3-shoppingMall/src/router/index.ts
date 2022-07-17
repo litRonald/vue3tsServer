@@ -11,11 +11,11 @@
    * 定义路由模块
    */
   const routes: Array<RouteRecordRaw> = [
-    // {
-    //   path: '/',
-    //   name: 'Login',
-    //   component: () => import('@/view/login/index.vue')
-    // },
+    {
+      path: '/',
+      name: 'Login',
+      component: () => import('../view/login/index.vue')
+    },
     // {
     //   path: '/LoginOut',
     //   name: 'LoginOut',

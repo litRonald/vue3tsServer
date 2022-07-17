@@ -1,0 +1,13 @@
+// 设置变量 主题颜色等
+$sysColor: red;
+$sysFontSize: 20px;
+$side : left;
+$main_color: rgb(57, 148, 148) !default;
+
+.theme_color{
+    color: $main_color;
+}
+
+.theme_bgc{
+    background-color: $main_color;
+}
