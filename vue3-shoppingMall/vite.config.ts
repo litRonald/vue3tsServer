@@ -1,5 +1,11 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { resolve, join } from 'path';
+
+// function pathResolve(dir: string) {
+//   return resolve(process.cwd(), '.', dir);
+// }
+
 // import env from import.meta.env
 
 // https://vitejs.dev/config/
@@ -18,6 +24,23 @@ export default defineConfig({
     // ]
   },
   alias: {
-  },
+    '@': join(__dirname, "src"),
+  }
+  // 1.
+  // [
+  //   {
+  //     find: /\/@\//,
+  //     replacement: pathResolve('src') + '/',
+  //   },
+  //   // /#/xxxx => types/xxxx
+  //   {
+  //     find: /\/#\//,
+  //     replacement: pathResolve('types') + '/',
+  //   },
+  // ]
+  // 2.
+  // {
+  //   // '/@/': path.resolve(__dirname, './src'),
+  // }
 
 })
