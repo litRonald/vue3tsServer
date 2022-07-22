@@ -26,6 +26,16 @@
       name: 'GoodsList',
       component: () => import('../view/GoodsList.vue')
     },
+    // {
+    //   path: '/three',
+    //   name: 'Three',
+    //   component: () => import('../view/threejs/index.vue')
+    // },
+    // {
+    //   path: '/video',
+    //   name: 'Video',
+    //   component: () => import('../view/video/index.vue')
+    // },
   ]
    
   /**

@@ -88,29 +88,25 @@ router.get('/logincode', async (req, res) => {
 // 登录
 router.post('/login', async (req, res) => {
     let { username, password, codes } = req.body
-    // console.log(req.body)
     // console.log(`---------------`)
     password = md5(password)
     if (!username || !password || !codes) {
         res.send({ code: '400', msg: '用户密码验证码不能为空' })
+        // 不return会出现提示 -》 Cannot set headers after they are sent to the client
+        return false
     }
     // 用户是否存在
     let sql = `select * from e_member where username = "${username}" && password = "${password}"`;
-    // console.log(sql)
     let [err, data] = await model.query(sql);
-    // console.log(data) 
-    if (data.length == 0) {
+    if (data.length === 0) {
         // 未注册
         res.send({
             code: '400', msg: '请先注册'
         })
     } else {
         // 验证码
-        console.log(req.cookies.code.toUpperCase())
-        console.log(codes.toUpperCase())
-        if (req.cookies.code.toUpperCase() == codes.toUpperCase()) {
+        if (req.cookies.code.toUpperCase() === codes.toUpperCase()) {
             res.send({code: '200', msg: '登录成功'})
-
             let token = createToken(user)
 	        res.json({token})
         } else {

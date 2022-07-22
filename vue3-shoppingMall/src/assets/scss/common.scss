@@ -21,6 +21,20 @@ li,ol{
 
 .m5{margin: 5;} .m10{margin: 10mx;} .m15{margin: 15;} .m20{margin: 20mx;}
 
+.tc{
+    text-align: center;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+}
 
 .flex{
     display: flex;

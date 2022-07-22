@@ -26,10 +26,12 @@ export default defineConfig({
   //     additionalData: '@import "./src/styles/variables.scss";'
   //   }
   // }
-  alias: {
-    '@': join(__dirname, "src"),
+  resolve:{
+    alias: {
+      '@': join(__dirname, "src"),
+    },
   },
-  
+
   css:{
     //css预处理
     preprocessorOptions:{
